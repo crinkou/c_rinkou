@@ -7,7 +7,6 @@
             "args": [
                 "-g",
                 "${file}",
-                "${fileDirname}/main.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-I/usr/include/opencv4/",
