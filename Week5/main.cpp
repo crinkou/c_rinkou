@@ -2,7 +2,7 @@
 
 int main()
 {
-    image_class Image("/home/tsuchida/Desktop/lena.png");
+    image_class Image("C:\\Users\\tsuch\\Github\\c_rinkou\\Week5\\lena.jpg");
     Image.image_show();
     Image.gray();
     Image.image_show();
