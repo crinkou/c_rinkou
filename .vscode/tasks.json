@@ -6,7 +6,8 @@
             "command": "/usr/bin/g++",
             "args": [
                 "-g",
-                "${file}",
+                "${fileDirname}/main.cpp",
+                "${fileDirname}/number.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-I/usr/include/opencv4/",
