@@ -20,6 +20,17 @@ void create_matrix(std::vector<std::vector<int>> &matrix, int raw, int colomn)
     }
 }
 
+void create_matrix_zero(std::vector<std::vector<int>> &matrix, int raw, int colomn)
+{
+    for (int i = 0; i < raw; i++) {
+        std::vector<int> a1;
+        for (int j = 0; j < colomn; j++) {
+            a1.push_back(0);
+        }
+        matrix.push_back(a1);   
+    }
+}
+
 void print_matrix(std::vector<std::vector<int>> matrix)
 {
     for (int i = 0; i < matrix.size(); i++) {
@@ -50,7 +61,7 @@ int main()
     std::vector<std::vector<int>> result_matrix;
     create_matrix(matrix_1, RAW_1, COLUMN_1);
     create_matrix(matrix_2, RAW_2, COLUMN_2);
-    create_matrix(result_matrix, RAW_1, COLUMN_2);
+    create_matrix_zero(result_matrix, RAW_1, COLUMN_2);
     multiplication_matrix(matrix_1, matrix_2, result_matrix);
 
     std::cout << "行列１" << std::endl;
