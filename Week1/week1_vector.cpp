@@ -46,6 +46,7 @@ int main(void)
         }
         result_matrix.push_back(result);
     }
+    
 
     std::cout << "行列1 ×　行列2" << std::endl;
     for (int i = 0; i < RAW_1; i++) {
