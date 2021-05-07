@@ -2,6 +2,7 @@
 #include <iostream>
 #include <time.h>
 #include <vector>
+#include <opencv4/opencv2/highgui.hpp>
 #define RAW_1 3
 #define COLUMN_1 4
 #define RAW_2 4//　COLLUMN_1 == RAW_2が成り立たなければならない
@@ -72,5 +73,9 @@ int main()
 
     std::cout << "結果は" << std::endl;
     print_matrix(result_matrix);
+    cv::Mat img;
+    img = cv::imread("/home/tsuchida/OneDrive/画像/code.png");
+    cv::imshow("fere", img);
+    cv::waitKey(0);
     return 0;
 }
